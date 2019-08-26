@@ -41,7 +41,7 @@ router.get("/", async (req, res) => {
       { new: true }
     );
   
-    if (!customer) res.status(404).send("Sorry the customer was not found");
+    if (!customer) return res.status(404).send("Sorry the customer was not found");
     res.send(customer);
   });
   

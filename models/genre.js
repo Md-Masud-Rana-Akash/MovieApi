@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 //   })
 // );
 
-const genreSchema = new new mongoose.Schema({
+const genreSchema = new mongoose.Schema({
       name: {
         type: String,
         required: true,
